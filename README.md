@@ -1,0 +1,1 @@
+devcontainersを使ってvenvから脱却する。CFnの開発環境（linterを含んだコーディング環境）を作ってみるサンプル。
