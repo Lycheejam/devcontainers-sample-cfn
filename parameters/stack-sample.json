@@ -1,0 +1,16 @@
+{
+    "StackName": "sample-bucket",
+    "Parameters": [
+        {
+            "ParameterKey": "BucketName",
+            "ParameterValue": "sample-bucket"
+        }
+    ],
+    "Tags": [
+        {
+            "Key": "Name",
+            "Value": "sample-bucket"
+        }
+    ],
+    "ChangeSetName": "change-set"
+}
