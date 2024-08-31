@@ -6,7 +6,24 @@
 
 version: 2
 updates:
- - package-ecosystem: "devcontainers"
-   directory: "/"
-   schedule:
-     interval: weekly
+  - package-ecosystem: "devcontainers"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "[devcontainers]"
+      include: "scope"
+    labels:
+      - "devcontainers"
+      - "dependencies"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "[github actions]"
+      include: "scope"
+    labels:
+      - "github actions"
+      - "dependencies"
