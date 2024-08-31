@@ -1,0 +1,17 @@
+{
+	"name": "${localWorkspaceFolderBasename}",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { 
+			"IMAGE_REPOSITORY": "mcr.microsoft.com/devcontainers/base",
+			"IMAGE_TAG": "1.1.2-ubuntu-24.04",
+			"IMAGE_DIGEST": "sha256:523f4f746606453e7c45e546093a7f5744b4ccc066704196a072d54cd4d40f95",
+			"RYE_VERSION": "0.39.0"
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	}
+}
