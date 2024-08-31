@@ -14,5 +14,8 @@
 		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers/features/github-cli:1": {}
 	},
+	"mounts": [
+		"source=${localEnv:HOME}/.aws,target=/home/vscode/.aws,type=bind,readonly"
+	],
 	"postStartCommand": "rye sync && rye run pre-commit install"
 }
