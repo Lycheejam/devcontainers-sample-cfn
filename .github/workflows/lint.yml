@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Yaml Linter
         run: |
-          rye run yamllint **/*.yaml **/*.yml
+          rye run yamllint .
 
       - name: Run CloudFormation Linter
         run: |
