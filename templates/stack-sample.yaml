@@ -1,13 +1,13 @@
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Description: Sample CloudFormation template
-Parameters: 
-  Environment: 
+Parameters:
+  Environment:
     Type: String
     Description: Environment name
 
-Resources: 
+Resources:
   SampleBucket:
     Type: AWS::S3::Bucket
-    Properties: 
-      BucketName: SampleBucket-${Environment}-${AWS::AccountId}
+    Properties:
+      BucketName: !Sub SampleBucket-${Environment}-${AWS::AccountId}
