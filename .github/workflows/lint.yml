@@ -12,7 +12,7 @@ jobs:
         python-version: ["3.12.5"]
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Install the latest version of rye
         uses: eifinger/setup-rye@v4
